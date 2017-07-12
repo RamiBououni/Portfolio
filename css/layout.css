@@ -1,0 +1,20 @@
+.welcome{
+  background: url('../img/welcome3.jpg');
+  background-repeat:no-repeat;
+  background-position: center center;
+  height:500px;
+  width: 100%;
+}
+
+.text {
+  height: 300px;
+  width: 25%;
+  font-size: 2em;
+  text-align: center;
+  background-color: rgba(106, 109, 139, 0.3);
+  margin: 40px;
+  padding: 40px;
+  position: relative;
+  left: 200px;
+  top: 50px;
+}

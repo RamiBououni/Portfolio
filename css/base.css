@@ -1,0 +1,17 @@
+html,
+body{
+  background-size: cover;
+  margin: 0;
+  padding: 30px;
+}
+
+img{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.text p {
+  position: relative;
+  top: 80px;
+}
