@@ -9,8 +9,12 @@
 .text {
   height: 300px;
   width: 25%;
+  font-size: 2em;
+  text-align: center;
   background-color: rgba(106, 109, 139, 0.3);
   margin: 40px;
+  padding: 40px;
   position: relative;
-  left: 100px;
+  left: 200px;
+  top: 50px;
 }

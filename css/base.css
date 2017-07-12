@@ -10,3 +10,8 @@ img{
   margin: auto;
   width: 50%;
 }
+
+p {
+  position: relative;
+  top: 80px;
+}
