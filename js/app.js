@@ -33,3 +33,25 @@ portfolioObjets.forEach(function(articleObject) {
 articles.forEach(function(article) {
   $('#articles').append(article.toHtml());
 });
+
+//initially hide the about me and portfolio section
+$('.aboutMe').hide();
+$('article').hide();
+
+
+$('#about').on('click', function(){
+  $('article').fadeOut();
+  $('.homepage').fadeOut();
+  $('.aboutMe').fadeIn();
+});
+
+$('#home').on('click', function(){
+  $('.homepage').fadeIn();
+  $('.aboutMe').fadeOut();
+  $('article').fadeOut();
+});
+
+$('#portfolio').on('click', function(){
+  $('article').fadeIn();
+  $('.aboutMe').fadeOut();
+});
