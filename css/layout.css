@@ -18,3 +18,23 @@
   left: 200px;
   top: 50px;
 }
+
+.arrow-up, .linkedin, .github {
+  display: inline;
+  padding: 0.2em 2.5em;
+  font-size: 2.5em;
+  text-decoration: none;
+  float: right;
+}
+
+.icon-circle-up {
+  color: rgb(230, 127, 20);
+}
+
+.icon-github {
+  color: black;
+}
+
+.icon-linkedin2 {
+  color: blue;
+}

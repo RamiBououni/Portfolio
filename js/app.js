@@ -54,4 +54,5 @@ $('#home').on('click', function(){
 $('#portfolio').on('click', function(){
   $('article').fadeIn();
   $('.aboutMe').fadeOut();
+  $('.homepage').fadeOut();
 });
