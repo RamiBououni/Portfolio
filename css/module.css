@@ -24,6 +24,7 @@
 
 .main-nav a {
   text-decoration: none;
+  color: rgb(230, 127, 20);
 }
 
 @media (min-width: 800px) {
@@ -45,6 +46,6 @@
     }
 
     .main-nav ul li:hover a {
-      color: #29506D;
+      color: rgb(67, 31, 154);
     }
 }
