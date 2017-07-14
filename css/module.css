@@ -22,7 +22,7 @@
   border-bottom: 1px solid #ccc;
 }
 
-.main-nav a {
+.main-nav a, #articles a {
   text-decoration: none;
   color: rgb(230, 127, 20);
 }
