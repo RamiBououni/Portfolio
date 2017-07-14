@@ -1,4 +1,4 @@
-'strict mode'
+'use strict'
 
 var articles = [];
 
@@ -10,18 +10,10 @@ function Portfolio(portfolioObj){
 }
 
 Portfolio.prototype.toHtml = function() {
-
-  var $newArticle = $('article.template').clone();
-  $newArticle.removeClass('template');
-
-  $newArticle.find('h1').text(this.title);
-  $newArticle.append(this.image);
-  $newArticle.find('a').text('Link to my Github').attr('href', this.link);
-  $newArticle.find('p').html(this.description);
-
-
-  $newArticle.append('<hr>');
-  return $newArticle;
+  var portofolioTemplatedString = $('#portfolioTemplate').html();
+  var compiled = Handlebars.compile(portofolioTemplatedString);
+  var html = compiled(this);
+  return html;
 };
 
 
