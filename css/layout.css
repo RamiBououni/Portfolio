@@ -1,7 +1,8 @@
 .welcome{
   background: url('../img/welcome3.jpg');
-  background-repeat:no-repeat;
-  background-position: center center;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
   height:500px;
   width: 100%;
 }
@@ -15,8 +16,14 @@
   margin: 40px;
   padding: 40px;
   position: relative;
-  left: 200px;
-  top: 50px;
+  left: 5%;
+  top: 10%;
+}
+
+.text p {
+  text-align: center;
+  position: relative;
+  top: 100px;
 }
 
 .arrow-up, .linkedin, .github {

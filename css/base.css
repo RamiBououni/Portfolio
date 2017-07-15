@@ -1,4 +1,6 @@
-html,
+html {
+  width: 100%;
+}
 body{
   background-size: cover;
   margin: 0;
@@ -9,11 +11,6 @@ img{
   display: block;
   margin: auto;
   width: 50%;
-}
-
-.text p {
-  position: relative;
-  top: 80px;
 }
 
 h1 {
