@@ -3,25 +3,25 @@
   float: right;
 }
 
-.main-nav ul {
+.nav-bar ul {
   display: none;
   padding: 0;
   list-style: none;
   clear: both;
 }
 
-.main-nav:hover ul {
+.nav-bar:hover ul {
   display: block;
 }
 
-.main-nav li {
+.nav-bar li {
   margin-right: .5em;
   font-size: 2em;
   padding: .6em .3em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1.5px solid #d4ae3c;
 }
 
-.main-nav a, #articles a {
+.nav-bar a, #projects a {
   text-decoration: none;
   color: rgb(230, 127, 20);
 }
@@ -30,17 +30,17 @@
   .icon-menu {
     display: none;
   }
-  .main-nav {
+  .nav-bar {
     padding: .2em .2em .2em 2em;
   }
-  .main-nav ul {
+  .nav-bar ul {
     display: block;
   }
-  .main-nav ul li {
+  .nav-bar ul li {
     display: inline;
     border-bottom: none;
   }
-  .main-nav ul li:hover a {
+  .nav-bar ul li:hover a {
     color: rgb(67, 31, 154);
   }
 }

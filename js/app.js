@@ -1,6 +1,6 @@
 'use strict'
 
-var articles = [];
+var myProjects = [];
 
 function Portfolio(portfolioObj){
   this.title = portfolioObj.title,
@@ -19,11 +19,11 @@ Portfolio.prototype.toHtml = function() {
 
 portfolioObjets.forEach(function(articleObject) {
   // REVIEW: Take a look at this forEach method; This may be the first time we've seen it.
-  articles.push(new Portfolio(articleObject));
+  myProjects.push(new Portfolio(articleObject));
 });
 
-articles.forEach(function(article) {
-  $('#articles').append(article.toHtml());
+myProjects.forEach(function(article) {
+  $('#projects').append(article.toHtml());
 });
 
 //initially hide the about me and portfolio section
