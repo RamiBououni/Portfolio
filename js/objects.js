@@ -1,4 +1,19 @@
-// 'use strict'
+
+
+
+
+//I just kept a copy of this so I can play with it later and practice more, especially after finishing the 301 and later on need a refresher on how to do certain things
+
+
+
+
+
+
+
+
+
+
+ // 'use strict'
 //
 // var portfolioObjets = [
 //   {
