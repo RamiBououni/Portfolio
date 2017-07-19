@@ -1,0 +1,22 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "this is my portfolio assignment for 301",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamiBououni/Portfolio.git"
+  },
+  "author": "rami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamiBououni/Portfolio/issues"
+  },
+  "homepage": "https://github.com/RamiBououni/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
