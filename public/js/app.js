@@ -70,7 +70,7 @@ $('#home').on('click', function() {
 
 $('#portfolio').on('click', function() {
   $('article').fadeIn();
-  Portfolio.fetchData();
-  $('.aboutMe').fadeOut();
   $('.homepage').fadeOut();
+  $('.aboutMe').fadeOut();
 });
+Portfolio.fetchData();

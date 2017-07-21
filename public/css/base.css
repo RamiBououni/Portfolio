@@ -26,3 +26,7 @@ h3 {
 a {
   text-decoration: none;
 }
+
+article {
+  display: none;
+}
