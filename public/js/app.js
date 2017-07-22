@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var myProjects = [];
 
@@ -57,18 +57,21 @@ $('article').hide();
 
 
 $('#about').on('click', function() {
+  event.preventDefault();
   $('article').fadeOut();
   $('.homepage').fadeOut();
   $('.aboutMe').fadeIn();
 });
 
 $('#home').on('click', function() {
+  event.preventDefault();
   $('.homepage').fadeIn();
   $('.aboutMe').fadeOut();
   $('article').fadeOut();
 });
 
 $('#portfolio').on('click', function() {
+  event.preventDefault();
   $('article').fadeIn();
   $('.homepage').fadeOut();
   $('.aboutMe').fadeOut();
