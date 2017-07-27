@@ -8,6 +8,7 @@ var app = app || {};
   aboutView.initAboutPage = function() {
     $('article').fadeOut();
     $('.homepage').fadeOut();
+    $('.repos').fadeOut();
     $('.aboutMe').fadeIn();
   }
 
