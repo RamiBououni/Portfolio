@@ -6,9 +6,10 @@ var app = app || {};
 
   var homeView = {};
   homeView.initHomePage = function() {
-    $('.homepage').fadeIn();
     $('.aboutMe').fadeOut();
+    $('.repos').fadeOut();
     $('article').fadeOut();
+    $('.homepage').fadeIn();
   }
 
   module.homeView = homeView;

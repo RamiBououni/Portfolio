@@ -3,14 +3,8 @@
 var app = app || {};
 
 (function(module){
-  var reposView = {};
-
-  reposView.initReposPage = function() {
-    $('article').fadeOut();
-    $('.homepage').fadeOut();
-    $('.aboutMe').fadeOut();
-    $('.repos').fadeIn();
+  module.displayMyRepos = function(myRepos){
+    var reposTemplate = Handlebars.compile($('#reposTemplate').html());
+    $('.my-repos').append(reposTemplate({repos: myRepos}));
   }
-
-  module.aboutView = reposView;
 })(app);
