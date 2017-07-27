@@ -6,12 +6,7 @@ var app = app || {};
 
   module.getMyRepos = function(callback) {
     $.get({
-      url: 'github/user/repos'
-      // url: 'https://api.github.com/user/repos',
-      // method: 'GET',
-      // headers: {
-      //   Authorization: `token ${githubToken}`
-      // }
+      url: `github/user/repos`,
     })
     .then(
         function(data) {

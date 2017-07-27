@@ -17,8 +17,7 @@ function proxyRouter(req, res) {
     headers: {
       Authorization: `token ${process.env.githubToken}`
     }
-  }))(req, res)
-
+  }))(req, res);
 }
 
-app.get('github/*', proxyRouter);
+app.get('/github/*', proxyRouter);
