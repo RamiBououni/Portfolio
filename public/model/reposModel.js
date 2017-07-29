@@ -27,7 +27,6 @@ var app = app || {};
   module.getMyRepoByName = function(ctx, next) {
     $.get({
       url: `/github/repos/RamiBououni/${ctx.params.name}`,
-      method: 'GET'
     })
     .then(
       function (data) {
