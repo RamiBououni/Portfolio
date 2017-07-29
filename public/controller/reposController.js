@@ -3,6 +3,8 @@
 var app = app || {};
 
 (function(module) {
+  var myRepos = {};
+
   module.myReposController = function() {
     module.getMyRepos(function(myRepos) {
       module.displayMyRepos(myRepos);
@@ -19,5 +21,5 @@ var app = app || {};
     $('.my-repos').fadeIn();
     next();
   }
-
+  module.myRepos = myRepos;
 })(app);
