@@ -11,13 +11,10 @@ var app = app || {};
     })
     .then(
         function(data) {
-          var filteredData = data.map(function(repos) {
-            var dataObj = {
-              name: repos.name,
-              url: repos.html_url
-            }
-            return dataObj
-          });
+          var filteredData = data.map(repos =>({
+            name: repos.name,
+            url: repos.html_url
+          }));
           ctx.repos = filteredData;
           next();
         }
