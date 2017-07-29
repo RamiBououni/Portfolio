@@ -20,4 +20,8 @@ function proxyRouter(req, res) {
   }))(req, res);
 }
 
+app.get('/*', function(req, res) {
+  res.sendFile('index.html', {root:'./public'});
+})
+
 app.get('/github/*', proxyRouter);
