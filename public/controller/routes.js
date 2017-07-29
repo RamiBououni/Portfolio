@@ -8,4 +8,6 @@ page('/portfolio', app.portfolioView.initPortfolioPage);
 
 page('/repos', app.myReposController);
 
+page('/repos/:name', app.getMyRepoByName, app.myReposController);
+
 page();

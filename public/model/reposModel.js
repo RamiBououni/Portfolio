@@ -21,4 +21,18 @@ var app = app || {};
         }
       );
   };
+
+
+  module.getMyRepoByName = function(ctx, next) {
+    $.get({
+      url: `github/repos/ramibououni/${ctx.params.name}`,
+      method: 'GET'
+    })
+    .then(
+      function (data) {
+        ctx.repos = [data];
+        next();
+      }
+    );
+  }
 })(app);
