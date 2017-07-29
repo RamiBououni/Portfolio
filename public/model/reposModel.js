@@ -5,8 +5,9 @@ var app = app || {};
 (function(module) {
 
   module.getMyRepos = function(ctx, next) {
-    $.get({
+    $.ajax({
       url: '/github/user/repos?affiliation=owner',
+      method: 'GET'
     })
     .then(
         function(data) {
@@ -25,8 +26,9 @@ var app = app || {};
 
 
   module.getMyRepoByName = function(ctx, next) {
-    $.get({
+    $.ajax({
       url: `/github/repos/RamiBououni/${ctx.params.name}`,
+      method: 'GET'
     })
     .then(
       function (data) {
