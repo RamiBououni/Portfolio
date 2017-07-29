@@ -4,9 +4,9 @@ var app = app || {};
 
 (function(module) {
 
-  module.getMyRepos = function(callback) {
+  module.getMyRepos = function(ctx, next) {
     $.get({
-      url: `github/user/repos`,
+      url: `/github/user/repos?affiliation=owner`,
     })
     .then(
         function(data) {
@@ -17,7 +17,8 @@ var app = app || {};
             }
             return dataObj
           });
-          callback(filteredData);
+          ctx.repos = filteredData;
+          next();
         }
       );
   };
