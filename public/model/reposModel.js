@@ -4,9 +4,9 @@ var app = app || {};
 
 (function(module) {
 
-  module.getMyRepos = function(ctx, next) {
+  module.getMyRepos = function(callback) {
     $.get({
-      url: `/github/user/repos?affiliation=owner`,
+      url: `github/user/repos`,
     })
     .then(
         function(data) {
@@ -17,8 +17,7 @@ var app = app || {};
             }
             return dataObj
           });
-          ctx.repos = filteredData;
-          next();
+          callback(filteredData);
         }
       );
   };
@@ -26,7 +25,7 @@ var app = app || {};
 
   module.getMyRepoByName = function(ctx, next) {
     $.get({
-      url: `github/repos/RamiBououni/${ctx.params.name}`,
+      url: `/github/repos/RamiBououni/${ctx.params.name}`,
       method: 'GET'
     })
     .then(

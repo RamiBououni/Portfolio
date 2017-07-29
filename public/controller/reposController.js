@@ -3,14 +3,21 @@
 var app = app || {};
 
 (function(module) {
-  module.myReposController = function(ctx, next) {
-    module.displayMyRepos(ctx.repos);
-
+  module.myReposController = function() {
+    module.getMyRepos(function(myRepos) {
+      module.displayMyRepos(myRepos);
+    })
     $('article').fadeOut();
     $('.homepage').fadeOut();
-    $('.repos').fadeIn();
-    next();
+    $('.my-repos').fadeIn();
   }
 
+  module.mySingleRepoController = function(ctx, next) {
+    $('article').fadeOut();
+    $('.homepage').fadeOut();
+    module.displayMyRepos(ctx.repos);
+    $('.my-repos').fadeIn();
+    next();
+  }
 
 })(app);
