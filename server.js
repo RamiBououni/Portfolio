@@ -14,6 +14,8 @@ app.get('/github/*', function(req, res) {
       Authorization: `token ${process.env.githubToken}`
     }
   }))(req, res);
+  console.log('expReqProxy is: ' + expReqProxy);
+  console.log('==============================');
 });
 
 app.get('/*', function(req, res) {
