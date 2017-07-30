@@ -6,13 +6,12 @@ var app = app || {};
   var myRepos = {};
 
   myRepos.myReposController = function(ctx, next) {
-    // $('.my-repos').empty();
+    $('#myRepos').empty();
     $('.aboutMe').fadeOut();
     $('article').fadeOut();
     $('.homepage').fadeOut();
     module.displayMyRepos(ctx.repos);
-    $('#repos').fadeIn();
-    // $('.my-repos').show();
+    $('#myRepos').show();
     next();
   }
 
@@ -20,7 +19,7 @@ var app = app || {};
     $('article').fadeOut();
     $('.homepage').fadeOut();
     module.displayMyRepos(ctx.repos);
-    $('.my-repos').fadeIn();
+    $('#myRepos').fadeIn();
     next();
   }
   module.myRepos = myRepos;
