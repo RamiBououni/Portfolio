@@ -14,13 +14,11 @@ app.get('/github/*', function(req, res) {
       Authorization: `token ${process.env.githubToken}`
     }
   }))(req, res);
-  console.log('expReqProxy is: ' + expReqProxy);
-  console.log('==============================');
 });
 
-// app.get('/*', function(req, res) {
-//   res.sendFile('index.html', {root:'./public'});
-// });
+app.get('/*', function(req, res) {
+  res.sendFile('index.html', {root:'./public'});
+});
 
 app.listen(PORT, function(){
   console.log(`Your node is listening on port: ${PORT}`);
