@@ -18,9 +18,9 @@ app.get('/github/*', function(req, res) {
   console.log('==============================');
 });
 
-app.get('/*', function(req, res) {
-  res.sendFile('index.html', {root:'./public'});
-});
+// app.get('/*', function(req, res) {
+//   res.sendFile('index.html', {root:'./public'});
+// });
 
 app.listen(PORT, function(){
   console.log(`Your node is listening on port: ${PORT}`);

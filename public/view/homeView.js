@@ -7,7 +7,7 @@ var app = app || {};
   var homeView = {};
   homeView.initHomePage = function() {
     $('.aboutMe').fadeOut();
-    $('.repos').fadeOut();
+    $('#repos').fadeOut();
     $('article').fadeOut();
     $('.homepage').fadeIn();
   }

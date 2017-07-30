@@ -19,8 +19,6 @@ var app = app || {};
             return dataObj
           });
           ctx.repos = filteredData;
-          console.log('ctx.repos in getMyRepos function in reposModel.js is: ' + ctx.repos);
-          console.log('==============================');
           next();
         }
       );
@@ -35,8 +33,6 @@ var app = app || {};
     .then(
       function (data) {
         ctx.repos = [data];
-        console.log('ctx.repos in getMyRepoByName function in reposModel.js is: ' + ctx.repos);
-        console.log('==============================');
         next();
       }
     );
