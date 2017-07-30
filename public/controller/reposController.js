@@ -6,9 +6,13 @@ var app = app || {};
   var myRepos = {};
 
   myRepos.myReposController = function(ctx, next) {
-    $('.my-repos').empty();
+    // $('.my-repos').empty();
+    $('.aboutMe').fadeOut();
+    $('article').fadeOut();
+    $('.homepage').fadeOut();
     module.displayMyRepos(ctx.repos);
-    $('.my-repos').show();
+    $('.repos').fadeIn();
+    // $('.my-repos').show();
     next();
   }
 
