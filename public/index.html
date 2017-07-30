@@ -32,7 +32,7 @@
 <script type="text/x-handlebars-template" id="reposTemplate">
   {{#each repos}}
     <li>
-      <h2>{{this.name}}<h2>
+      <h2><a href="/repos/{{this.name}}">{{this.name}}</a><h2>
       <a href="{{this.url}}"><i class="icon-github" aria-hidden="true"></i> Click Me </a>
       <hr>
     </li>
@@ -88,8 +88,8 @@
     </section>
 
     <section>
-      <div class="repos">
-        <ul class="my-repos">
+      <div id="repos">
+        <ul id="myRepos">
 
         </ul>
       </div>
