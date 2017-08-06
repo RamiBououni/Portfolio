@@ -6,7 +6,7 @@ var app = app || {};
 
   module.getMyRepos = function(callback) {
     $.get({
-      url: `github/user/repos`,
+      url: `github/users/ramibououni/repos`,
     })
     .then(
         function(data) {
