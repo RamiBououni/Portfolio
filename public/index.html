@@ -16,7 +16,7 @@
       <header>
         <h1>{{title}}</h1>
         <div>
-          <address><a href="{{link}}"><i class="icon-github" aria-hidden="true"></i> Github Link</a></address> {{{image}}}
+          <address><a href="{{link}}" target="_blank"><i class="icon-github" aria-hidden="true"></i> Github Link</a></address> {{{image}}}
         </div>
       </header>
       <section class="article-body">
@@ -33,7 +33,7 @@
   {{#each repos}}
     <li>
       <h2>{{this.name}}<h2>
-      <a href="{{this.url}}"><i class="icon-github" aria-hidden="true"></i> Click Me </a>
+      <a href="{{this.url}}" target="_blank"><i class="icon-github" aria-hidden="true"></i> Click Me </a>
       <hr>
     </li>
   {{/each}}
@@ -99,12 +99,12 @@
 
   <footer>
     <div class="linkedin">
-      <a href="https://www.linkedin.com/in/rami-bououni/">
+      <a href="https://www.linkedin.com/in/rami-bououni/" target="_blank">
       <i class="icon-linkedin2" aria-hidden="true"></i>
       </a>
     </div>
     <div class="github">
-      <a href="https://github.com/RamiBououni?tab=repositories">
+      <a href="https://github.com/RamiBououni?tab=repositories" target="_blank">
       <i class="icon-github" aria-hidden="true"></i>
       </a>
     </div>
